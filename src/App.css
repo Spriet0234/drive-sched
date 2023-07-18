@@ -39,3 +39,13 @@
   }
   
 }
+.react-datepicker__day--selected {
+  background-color: #007bff !important;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+}
