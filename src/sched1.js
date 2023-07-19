@@ -5,13 +5,15 @@ export default function Sched1() {
       style={{
         width: "1082px",
         backgroundColor: "#113B7A1A",
-        height: "365px",
+        height: "380px",
         borderRadius: "30px",
         marginBottom: "10px",
         flexDirection: "column",
         justifyContent: "flex-start",
         display: "flex",
         padding: 20,
+
+        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
       }}
     >
       <div
@@ -29,12 +31,17 @@ export default function Sched1() {
         style={{
           backgroundColor: "white",
           width: "100%",
+          height: 100,
           color: "#00095B",
           borderRadius: 5,
           marginRight: 10,
           marginLeft: 10,
           fontWeight: 500,
+          fontSize: 18,
           padding: 3,
+          marginBottom: 20,
+          boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
+          alignSelf: "center",
         }}
       >
         Wayne Ford - Thursday, 7/13 @12pm
@@ -47,12 +54,33 @@ export default function Sched1() {
         }}
       >
         <div
-          style={{ display: "flex", flexDirection: "column", marginRight: 50 }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            marginRight: 50,
+            justifyContent: "start",
+            alignItems: "start",
+          }}
         >
-          <div style={{ fontWeight: 500, color: "#00095B" }}>
+          <div
+            style={{
+              fontWeight: 500,
+              color: "#00095B",
+              fontSize: 22,
+              alignSelf: "start",
+              textAlign: "start",
+            }}
+          >
             Guest Information
           </div>
-          <div>login</div>
+          <a
+            style={{ marginBottom: 10 }}
+            href="https://www.example.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Or login/create a Ford accound{" "}
+          </a>
           <input
             style={{
               backgroundColor: "white",
@@ -61,6 +89,7 @@ export default function Sched1() {
               height: 30,
               border: "none",
               marginBottom: 10,
+              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
             }}
             placeholder="Name"
           ></input>
@@ -72,6 +101,7 @@ export default function Sched1() {
               height: 30,
               border: "none",
               marginBottom: 10,
+              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
             }}
             placeholder="Email"
           />
@@ -83,6 +113,7 @@ export default function Sched1() {
               height: 30,
               border: "none",
               marginBottom: 10,
+              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
             }}
             placeholder="Number"
           />
@@ -93,6 +124,7 @@ export default function Sched1() {
               width: 340,
               height: 30,
               border: "none",
+              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
             }}
             placeholder="Notes"
           />
@@ -109,7 +141,7 @@ export default function Sched1() {
             style={{
               fontWeight: 500,
               color: "#00095B",
-              fontSize: 20,
+              fontSize: 22,
               alignSelf: "start",
               textAlign: "start",
             }}
@@ -120,7 +152,13 @@ export default function Sched1() {
           <div>limited to 2 cars to test drive during your appointment.</div>
           <img src="/bronco.png" style={{ alignSelf: "start" }}></img>
           <div style={{ marginBottom: 0 }}>
-            Select more cars available at Wayne Ford
+            <a
+              href="https://www.example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Select more cars available at Wayne Ford
+            </a>
           </div>
           <button
             style={{
@@ -138,6 +176,7 @@ export default function Sched1() {
               marginTop: 20,
               fontSize: 18,
               width: 300,
+              marginBottom: 10,
             }}
           >
             Confirm

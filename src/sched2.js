@@ -33,6 +33,7 @@ export default function Sched2() {
         flexDirection: "column",
         padding: 20,
         marginBottom: 20,
+        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
       }}
     >
       <div
@@ -93,6 +94,7 @@ export default function Sched2() {
                   flexDirection: "column",
                   alignContent: "center",
                   justifyContent: "center",
+                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <div style={{ color: "gray" }}>Thursday, 7/13</div>
@@ -111,6 +113,7 @@ export default function Sched2() {
                   flexDirection: "column",
                   alignContent: "center",
                   justifyContent: "center",
+                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <div style={{ color: "gray" }}>Thursday, 7/13</div>
@@ -129,6 +132,7 @@ export default function Sched2() {
                   flexDirection: "column",
                   alignContent: "center",
                   justifyContent: "center",
+                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <div style={{ color: "gray" }}>Thursday, 7/13</div>
@@ -149,6 +153,7 @@ export default function Sched2() {
                   flexDirection: "column",
                   alignContent: "center",
                   justifyContent: "center",
+                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <div style={{ color: "gray" }}>Thursday, 7/13</div>
@@ -167,6 +172,7 @@ export default function Sched2() {
                   flexDirection: "column",
                   alignContent: "center",
                   justifyContent: "center",
+                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <div style={{ color: "gray" }}>Thursday, 7/13</div>
@@ -185,6 +191,7 @@ export default function Sched2() {
                   flexDirection: "column",
                   alignContent: "center",
                   justifyContent: "center",
+                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <div
@@ -209,13 +216,19 @@ export default function Sched2() {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           <div
             style={{
               color: "#00095B",
               fontSize: 22,
               fontWeight: 500,
-              marginBottom: 20,
+              marginBottom: 41,
+              alignSelf: "start",
             }}
           >
             Look up date and time
@@ -230,7 +243,11 @@ export default function Sched2() {
           <div>
             <Select
               styles={{
-                container: (provided) => ({ ...provided, width: "100%" }),
+                container: (provided) => ({
+                  ...provided,
+                  width: "100%",
+                  boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
+                }),
               }} // Add this line
               options={hours}
               value={selectedHour}
@@ -262,3 +279,9 @@ export default function Sched2() {
     </div>
   );
 }
+const customStyles = {
+  control: (provided) => ({
+    ...provided,
+    boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Adjust the values as needed
+  }),
+};
