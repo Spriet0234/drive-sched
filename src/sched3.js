@@ -22,14 +22,14 @@ export default function Sched3() {
         style={{
           color: "#00095B",
           fontWeight: "bold",
-          fontSize: 25,
+          fontSize: 27,
           alignSelf: "flex-start",
           marginBottom: 10,
         }}
       >
         Your Appointment is confirmed
       </div>
-      <div style={{ alignSelf: "start" }}>
+      <div style={{ alignSelf: "start", marginBottom: 15, color: "black" }}>
         A confirmation email has been sent. Please arrive 15 minutes before your
         scheduled appointment time.
       </div>
@@ -42,7 +42,7 @@ export default function Sched3() {
           marginRight: 10,
           marginLeft: 10,
           fontWeight: 500,
-          fontSize: 18,
+          fontSize: 20,
           padding: 3,
           marginBottom: 20,
           boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
@@ -58,6 +58,7 @@ export default function Sched3() {
           justifyContent: "start",
           alignContent: "start",
           textAlign: "start",
+          marginLeft: 25,
         }}
       >
         <div
@@ -72,65 +73,87 @@ export default function Sched3() {
           <div
             style={{
               backgroundColor: "white",
-              padding: 5,
-              width: 250,
-              height: 20,
               borderRadius: 5,
+              width: 400,
+              height: 40,
+              border: "none",
               marginBottom: 10,
-              fontWeight: 300,
+              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
               fontSize: 18,
-              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+              color: "gray",
+              fontWeight: 400,
+              marginBottom: 5,
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: 5,
             }}
           >
-            name
+            Name
           </div>
           Email:
           <div
             style={{
               backgroundColor: "white",
-              padding: 5,
-              width: 250,
-              height: 20,
               borderRadius: 5,
+              width: 400,
+              height: 40,
+              border: "none",
               marginBottom: 10,
-              fontWeight: 300,
+              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
               fontSize: 18,
-              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+              color: "gray",
+              fontWeight: 400,
+              marginBottom: 5,
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: 5,
             }}
           >
-            email
+            Email
           </div>
           Phone number:
           <div
             style={{
               backgroundColor: "white",
-              padding: 5,
-              width: 250,
-              height: 20,
               borderRadius: 5,
+              width: 400,
+              height: 40,
+              border: "none",
               marginBottom: 10,
-              fontWeight: 300,
+              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
               fontSize: 18,
-              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+              color: "gray",
+              fontWeight: 400,
+              marginBottom: 5,
+              display: "flex",
+
+              alignItems: "center",
+              paddingLeft: 5,
             }}
           >
-            phone
+            Phone number
           </div>
           Notes:
           <div
             style={{
               backgroundColor: "white",
-              padding: 5,
-              width: 250,
-              height: 20,
               borderRadius: 5,
+              width: 400,
+              height: 40,
+              border: "none",
               marginBottom: 10,
-              fontWeight: 300,
+              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
               fontSize: 18,
-              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+              color: "gray",
+              fontWeight: 400,
+              marginBottom: 5,
+              display: "flex",
+
+              alignItems: "center",
+              paddingLeft: 5,
             }}
           >
-            notes
+            Notes
           </div>
         </div>
         <div style={{ marginRight: 30 }}>
@@ -138,9 +161,10 @@ export default function Sched3() {
             style={{
               fontWeight: 500,
               color: "#00095B",
-              fontSize: 22,
+              fontSize: 23,
               alignSelf: "start",
               textAlign: "start",
+              marginBottom: 10,
             }}
           >
             Trims to test drive
@@ -152,7 +176,7 @@ export default function Sched3() {
             style={{
               fontWeight: 500,
               color: "#00095B",
-              fontSize: 22,
+              fontSize: 23,
               marginBottom: 10,
             }}
           >

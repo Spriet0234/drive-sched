@@ -5,7 +5,7 @@ export default function Sched1() {
       style={{
         width: "1082px",
         backgroundColor: "#113B7A1A",
-        height: "380px",
+        height: "430px",
         borderRadius: "30px",
         marginBottom: "10px",
         flexDirection: "column",
@@ -20,7 +20,7 @@ export default function Sched1() {
         style={{
           color: "#00095B",
           fontWeight: "bold",
-          fontSize: 25,
+          fontSize: 27,
           alignSelf: "flex-start",
           marginBottom: 10,
         }}
@@ -31,13 +31,12 @@ export default function Sched1() {
         style={{
           backgroundColor: "white",
           width: "100%",
-          height: 100,
           color: "#00095B",
           borderRadius: 5,
           marginRight: 10,
           marginLeft: 10,
           fontWeight: 500,
-          fontSize: 18,
+          fontSize: 20,
           padding: 3,
           marginBottom: 20,
           boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
@@ -60,13 +59,14 @@ export default function Sched1() {
             marginRight: 50,
             justifyContent: "start",
             alignItems: "start",
+            marginLeft: 30,
           }}
         >
           <div
             style={{
               fontWeight: 500,
               color: "#00095B",
-              fontSize: 22,
+              fontSize: 23,
               alignSelf: "start",
               textAlign: "start",
             }}
@@ -74,59 +74,64 @@ export default function Sched1() {
             Guest Information
           </div>
           <a
-            style={{ marginBottom: 10 }}
+            style={{ marginBottom: 10, color: "#575757", fontWeight: 100 }}
             href="https://www.example.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Or login/create a Ford accound{" "}
+            Or login/create a Ford account{" "}
           </a>
           <input
             style={{
               backgroundColor: "white",
               borderRadius: 5,
-              width: 340,
-              height: 30,
+              width: 400,
+              height: 40,
               border: "none",
               marginBottom: 10,
               boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
+              fontSize: 18,
             }}
-            placeholder="Name"
+            placeholder=" Name*"
           ></input>
           <input
             style={{
               backgroundColor: "white",
               borderRadius: 5,
-              width: 340,
-              height: 30,
+              width: 400,
+              height: 40,
               border: "none",
               marginBottom: 10,
               boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
+              fontSize: 18,
             }}
-            placeholder="Email"
+            placeholder=" Email*"
           />
           <input
             style={{
               backgroundColor: "white",
               borderRadius: 5,
-              width: 340,
-              height: 30,
+              width: 400,
+              height: 40,
               border: "none",
               marginBottom: 10,
               boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
+              fontSize: 18,
             }}
-            placeholder="Number"
+            placeholder=" Phone number*"
           />
           <input
             style={{
               backgroundColor: "white",
               borderRadius: 5,
-              width: 340,
-              height: 30,
+              width: 400,
+              height: 50,
               border: "none",
+              marginBottom: 10,
               boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
+              fontSize: 18,
             }}
-            placeholder="Notes"
+            placeholder=" Notes/Requests"
           />
         </div>
         <div
@@ -141,7 +146,7 @@ export default function Sched1() {
             style={{
               fontWeight: 500,
               color: "#00095B",
-              fontSize: 22,
+              fontSize: 23,
               alignSelf: "start",
               textAlign: "start",
             }}
@@ -149,40 +154,52 @@ export default function Sched1() {
             Trims to Test Drive
           </div>
 
-          <div>limited to 2 cars to test drive during your appointment.</div>
+          <div style={{ marginTop: 10, marginBottom: 10, color: "#575757" }}>
+            limited to 2 cars to test drive during your appointment.
+          </div>
           <img src="/bronco.png" style={{ alignSelf: "start" }}></img>
-          <div style={{ marginBottom: 0 }}>
+          <div style={{ marginBottom: 0, marginTop: 10 }}>
             <a
               href="https://www.example.com"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ color: "#00095B" }}
             >
               Select more cars available at Wayne Ford
             </a>
           </div>
           <button
             style={{
-              alignSelf: "end",
               marginTop: 0,
               color: "white",
               backgroundColor: "#00095B",
               border: "none",
-              borderRadius: "5px",
+              borderRadius: 10,
               paddingHorizontal: "10px",
               paddingTop: 5,
               paddingRight: 10,
               paddingLeft: 10,
               paddingBottom: 10,
-              marginTop: 20,
+              marginTop: 30,
+              marginLeft: 230,
               fontSize: 18,
               width: 300,
               marginBottom: 10,
             }}
           >
-            Confirm
+            Confirm appointment
           </button>
         </div>
       </div>
+      <img
+        src="/back.png"
+        style={{
+          alignSelf: "start",
+          height: 22,
+          marginTop: -30,
+          marginLeft: 8,
+        }}
+      ></img>
     </div>
   );
 }
